@@ -1,0 +1,41 @@
+{
+  "name": "tomaquet",
+  "version": "0.0.0",
+  "description": "MQTT middleware framework.",
+  "keywords": [
+    "mqtt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/tomaquet.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/tomaquet/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "mqtt": "0.2.x",
+    "debug": "0.7.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=./lib node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
